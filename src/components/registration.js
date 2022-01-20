@@ -29,7 +29,10 @@ const Registration = () => {
         }
         // console.log(res.data);
       })
-      .catch((error) => console.log("error", error));
+      .catch((error) => {
+        console.log("error", error);
+        alert("Something Went Wrong");
+      });
   }
 
   // set data in REDUX

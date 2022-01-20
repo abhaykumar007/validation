@@ -23,7 +23,10 @@ const Login = () => {
           alert("Something Went wrong please try again");
         }
       })
-      .catch((error) => console.log("error", error));
+      .catch((error) => {
+        console.log("error", error);
+        alert("Something Went Wrong");
+      });
   }
   function handelSubmit(e) {
     e.preventDefault();
